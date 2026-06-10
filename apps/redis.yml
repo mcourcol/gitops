@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/mcourcol/gitops.git
     targetRevision: master
-    path: apps/redis/manifests
+    path: manifests/redis
 
   destination:
     server: https://kubernetes.default.svc
