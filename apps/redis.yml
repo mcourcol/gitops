@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/mcourcol/gitops.git
-    targetRevision: main
+    targetRevision: master
     path: apps/redis/manifests
 
   destination:
