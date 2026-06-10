@@ -7,9 +7,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/your-org/gitops.git
+    repoURL: https://github.com/mcourcol/gitops.git
     targetRevision: main
-    path: gitops/apps/redis/manifests
+    path: apps/redis/manifests
 
   destination:
     server: https://kubernetes.default.svc
