@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/mcourcol/gitops.git
     targetRevision: master
-    path: apps/
+    path: apps
 
   destination:
     server: https://kubernetes.default.svc
