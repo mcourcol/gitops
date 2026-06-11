@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: lorem-ipsum
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/mcourcol/gitops.git
+    targetRevision: master
+    path: manifests/lorem-ipsum
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: lorem-ipsum
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lorem-ipsum
+  namespace: lorem-ipsum
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: lorem-ipsum
+  template:
+    metadata:
+      labels:
+        app: lorem-ipsum
+    spec:
+      containers:
+        - name: lorem-ipsum
+          image: mcourcol/lorem-ipsum:1.0.0
+          ports:
+            - containerPort: 3000
