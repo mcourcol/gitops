@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: lorem-ipsum
-          image: mcourcol/lorem-ipsum:1.0.0
+          image: mcourcol/lorem-ipsum:05aa5cd
           ports:
             - containerPort: 3000
